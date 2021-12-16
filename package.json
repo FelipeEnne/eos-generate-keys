@@ -1,0 +1,26 @@
+{
+  "name": "eos-generate-keys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minifier": "node scripts/minifier.js",
+    "concatjs": "node scripts/concatjs.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeEnne/eos-generate-keys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeEnne/eos-generate-keys/issues"
+  },
+  "homepage": "https://github.com/FelipeEnne/eos-generate-keys#readme",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.14.5"
+  }
+}
