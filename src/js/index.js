@@ -6,7 +6,6 @@ byId("generate-link").addEventListener("click", function(e) {
 });
 
 function generate() {
-    showPane('generate')
 
     setTimeout(() => {
         privateKeyPair = genKeyPair()
@@ -51,17 +50,3 @@ function genKeyPair() {
     return {pubkey, privkey, pubkeyError, privkeyError}
 }
 
-function showPane(name) {
-    hidePanes()
-    show(`${name}-pane`)
-    hide(`${name}-link`)
-}
-
-function hidePanes() {
-    for (let x of "generate transfer buy register".split(" ")) {
-        try {
-            show(`${x}-link`)
-            hide(`${x}-pane`)
-        } catch (error) {}
-    }
-}
